@@ -1,11 +1,18 @@
 #include <iostream>
 using namespace std;
 
-//procédure
+//procédure 10 nombres
 void affichage10Nombres(int nbDepart) {
-    // Affiche les dix nombres suivants
     for (int i = 1; i <= 10; i++) {
         cout << nbDepart + i << endl;
+    }
+}
+//procédure nombres imparis
+void affichageNombresImpairs() {
+    for (int i = 1; i <= 20; i++) {
+        if (i % 2 != 0) {
+            cout << i << endl;
+        }
     }
 }
 
@@ -18,6 +25,8 @@ int main() {
 
     // Appel de la procédure
     affichage10Nombres(nombreDepart);
+
+    affichageNombresImpairs();
 
     return 0;
 }
